@@ -40,9 +40,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 #footer {
   background-color: #444;
@@ -56,6 +53,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 /* ====================== Navigation ====================== */
 nav {
+	display: flex;
   width: 100%;
   height: 80px;
   background-color: #252831;
@@ -110,10 +108,11 @@ nav h1 a {
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
-  width: 100%;
-  height: 100%;
-  background-color: #3397DB;
-  align-items: center;
+	width: 100%;
+	height: auto;
+	background-color: #252831;
+	text-align: center;
+	align-items: center;
 	padding: 15px 0;
 }
 .filter-options h2 {
@@ -143,7 +142,8 @@ nav h1 a {
   padding: 30px 15px 60px;
   text-align: center;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
 }
 #restaurants-list li {
@@ -155,6 +155,8 @@ nav h1 a {
   padding: 0 30px 25px;
   text-align: left;
 	max-width: 500px
+	display:flex;
+	flex-direction: column;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -162,6 +164,7 @@ nav h1 a {
   margin: 0;
   max-width: 100%;
   min-width: 100%;
+	min-height: auto;
 }
 #restaurants-list li h1 {
   color: #f18200;
