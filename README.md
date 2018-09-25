@@ -40,6 +40,10 @@ Matthew Cranford  [Restaurant Reviews App Walkthrough](https://matthewcranford.c
 Ryan Waite [Tutorial] (https://www.youtube.com/watch?v=2PY733qFR3A&feature=youtu.be).
 Udacity student discussion forums
 
+Paul Kinlan[Google Web Fundamentals](https://developers.google.com/web/fundamentals/codelabs/offline/).
+
+Jake Archibald[The Offline Cookbook](https://jakearchibald.com/2014/offline-cookbook/).
+
 ### Note about ES6
 
 Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write.
