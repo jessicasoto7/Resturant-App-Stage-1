@@ -30,6 +30,21 @@ self.addEventListener('install', function(event) {
   );
 });
 
+self.addEventListener('activate', function(event) {
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheName.filter(function(cacheNames) {
+          return cacheNames.startsWith("restaurant") &&
+            cacheNames != cacheName;
+        }).map(function(cacheNames) {
+          return cache.delete(cacheNames);
+        })
+      );
+    })
+  );
+});
+
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request).then(function(response) {
